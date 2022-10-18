@@ -67,9 +67,10 @@ def visualize_kde(h=0.5):
     final, point = kernel_density_estimator(means, h=h)
     plt.plot(point, final*5, label='KDE', color='blue')
     plt.legend()
-    plt.savefig("output/KDE_1D_0.25.png")
+    plt.title(f"Smoothing: h={h}")
+    plt.savefig(f"output/KDE_1D_{h}.png")
     plt.show()
 
 
 if __name__ == '__main__':
-    visualize_kde(h=0.25)
+    visualize_kde(h=0.75)

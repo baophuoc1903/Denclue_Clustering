@@ -40,7 +40,8 @@ class Denclue_Algorithm(object):
         ax = fig.add_subplot(111, projection='3d')
         ax.set_xlabel("x1")
         ax.set_ylabel("x2")
-        ax.set_zlabel("Density")
+        ax.set_zlabel(f"Density")
+        ax.set_title(f"KDE with H={self.hypers['H']}")
         num_point = 50
         X = np.linspace(0, 10, num_point)
         Y = np.linspace(0, 10, num_point)

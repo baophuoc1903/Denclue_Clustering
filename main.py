@@ -27,7 +27,7 @@ def read_data(filename):
 
 
 if __name__ == '__main__':
-    hypers = {"H": 0.1,  # Smoothing parameter
+    hypers = {"H": 0.5,  # Smoothing parameter
               "CLUSTER_MERGE_DISTANCE": 0.5,  # Cluster linkage distance
               "CONSIDER_CLOSE": 0.2,  # Neighbor point consider same cluster
               "DELTA": 0.2,  # Learning rate
